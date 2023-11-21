@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div>
+        <h3>Random numbers</h3>
+        <h4></h4>
+        <input type="number" id="randomnumber">
+    </div>
+    <script async>
+        min = 10;
+        max = 50;
+        const randomnumber = document.getElementById('randomnumber');
+        const number = document.getElementsByTagName('h4')[0];
+    
+        // const random=Math.floor(Math.random()*(max-min)+min);
+        const rand_no = Math.random()*10;
+        const random=(Math.random()*(max-min)+min);
+
+        randomnumber.value=random;
+        number.innerText = rand_no;
+    
+    </script>
+</body>
+</html>

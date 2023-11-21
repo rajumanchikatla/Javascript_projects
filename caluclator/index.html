@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="result">
+                <span id="final-result"></span>
+                <input type="text" id="expression">
+            </div>
+            <div class="buttons">
+                <div class="cal-buttons">
+                    <button class="btn cr-red" onclick="reset()">AC</button>
+                    <button class="btn cr-red" onclick="backPress()">DELETE</button>
+                    <button class="btn exp-item">%</button>
+                    <button class="btn exp-item">/</button>
+                    <button class="btn exp-item">7</button>
+                    <button class="btn exp-item">8</button>
+                    <button class="btn exp-item">9</button>
+                    <button class="btn exp-item">*</button>
+                    <button class="btn exp-item">4</button>
+                    <button class="btn exp-item">5</button>
+                    <button class="btn exp-item">6</button>
+                    <button class="btn exp-item">-</button>
+                    <button class="btn exp-item">1</button>
+                    <button class="btn exp-item">2</button>
+                    <button class="btn exp-item">3</button>
+                    <button class="btn exp-item">+</button>
+                    <button class="btn" onclick="ce()"><span class=reload>CE</span></button>
+                    <button class="btn exp-item">0</button>
+                    <button class="btn exp-item">.</button>
+                    <button class="btn" onclick="evaluateExpression()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

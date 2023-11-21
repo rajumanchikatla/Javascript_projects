@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #d0ebff;
+}
+h1{
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 20px;
+  color: coral;
+}
+h3{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 80px;
+  font-family: 'Courier New', Courier, monospace;
+}
