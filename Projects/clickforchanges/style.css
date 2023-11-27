@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.quote-writer{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 12fr 4fr;
+    height: 100vh;
+}
+.tool-box{
+     /* background: linear-gradient(to bottom right, #800080, #000080); */
+     /* background: linear-gradient(to bottom right, #9400D3, #00FF00); */
+    background-image: linear-gradient(135deg,#00e3ae 10%, #9be15d 100%);
+    grid-row: 1 / 3;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.text-box{
+    margin-top: 20px;
+    border: none;
+}
+.dropdown {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+}
+.text-box input{
+    background-color: #d0ebff;
+    color: #222;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.text-box input:hover{
+    border: none;
+}
+.output-box{
+    background-color: green;
+    display: flex;
+    color: #fff;
+    position: absolute;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    height: 100%;
+}
+.dropdown-menu {
+    background-color: #00e3ae;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #9be15d;
+}
+.line-break{
+    margin-top: 10px;
+    border: 1px solid grey;
+}
+.color-picker{
+    background-color: #d0ebff;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid brown;
+}
+.color-picker .btn{
+    background-color: var(--color);
+    padding: 20px 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.btn-1{ --color:red;}
+.btn-2{ --color:violet;}
+.btn-3{ --color:blue;}
+.btn-4{ --color:yellow;}
+.btn-5{ --color:#0b7285;}
+.btn-6{ --color:darkblue;}
+.btn-7{ --color:brown;}
+.btn-8{ --color:purple;}
+.color-picker .btn:hover {
+    background-color: var(--color);
+    border: 1px solid black;
+}
+.heading{
+    text-align: center;
+    color: #fff;
+}
+.margin-adjust{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.margin-adjust .btn{
+    padding: 5px;
+    margin:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px; 
+}

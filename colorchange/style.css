@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.quote-container{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    height: 100vh;
+    grid-template-rows: 12fr 4fr;
+}
+.tool-box{
+    grid-row: 1 / 3;
+    background-image:linear-gradient(135deg,#00e3ae 10%, #9be15d 100%);
+    padding: 10px 20px;
+    text-align: center;
+}
+.dropdown{
+    margin-bottom: 10px;
+}
+.output-box{
+    background-color: green;
+}
