@@ -16,13 +16,13 @@ const textContainer = document.getElementById('text-container');
 });
     input.addEventListener('input',function(e){
     const text =e.target.value;
-    document.getElementById('output-text').innerText = text;
+    document.getElementById('image-box').innerText = text;
 });
 
 Array.from(colorbtns).forEach(btn => {
     btn.addEventListener('click', function(){
         const bgcolor = getComputedStyle(this).getPropertyValue('--color');
-        document.getElementById('output-text').style.backgroundColor = bgcolor;
+        document.getElementById('image-box').style.backgroundColor = bgcolor;
     });
 });
 
